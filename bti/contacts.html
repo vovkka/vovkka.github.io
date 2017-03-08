@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Chrome, Firefox, Opera -->
+	<meta name="theme-color" content="#32c0ff">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#32c0ff">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#32c0ff">
+	<meta name="author" content="Pospelov Vladimir">
+	<title>Project Title</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	</head>
+	<body>
+		<div id="form-popup" class="white-popup mfp-hide">
+			<form action="#">
+				<span class="title-form">Обратная связь</span>
+				<div><label for="name">Имя</label><input id="name" class="inputbox" type="text"/></div>
+				<div><label for="email">E-mail или номер телефона</label><input id="email" class="inputbox" type="email"/></div>
+				<div><label for="theme">Тема сообщения</label><input id="theme" class="inputbox" type="theme"/></div>
+				<div><label for="mess">Текст сообщения</label><textarea name="message" id="mess" class="inputbox" cols="30" rows="10"></textarea></div>
+				<div class="button-popup-holder"><input type="submit" value="Отправить" class="button-popup"></div>
+			</form>
+			<a href="#" class="mfp-close"></a>
+		</div>
+		<div class="wrapper">
+			<header class="header clearfix">
+				<div class="header-holder clearfix">
+					<form action="" method="" class="search-form">
+						<input type="text" name="search_query" placeholder="Введите вопрос" class="search-main-input">
+						<input type="submit" name="" class="search-main-submit">
+						<div class="close"></div>
+					</form>
+					<div class="header-contacts">
+						<a href="#form-popup" class="message"></a>
+						<a href="#" class="search"></a>
+						<div class="header-contacts-tel">(343) 287 85 85</div>
+					</div>
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="БТИКР">
+						</a>
+					</div>
+					<nav>
+						<div class="mobile-menu">
+							<a href="#">Меню</a>
+						</div>
+						<ul>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Проекты</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#" class="active">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="breadcrumb">
+        <div class="breadcrumb-holder">
+          <span>Главная/Контакты</span>
+        </div>
+      </div>
+
+			<div class="content clearfix">
+				<h1>Контакты</h1>
+				<div class="contacts clearfix">
+					<div class="contacts-plash clearfix">
+						<div class="link_map-holder">
+							<a href="#" class="link_map link_map1 active">г. Екатеринбург</a>
+							<a href="#" class="link_map link_map2">г. Сысерть</a>
+							<a href="#" class="link_map link_map3">г. Первоуральск</a>
+						</div>
+
+						<div class="plash-content-holder plash-1 show">
+							<div class="plash-city">Екатеринбургский филиал</div>
+							<div class="plash-adr">620014 г. Екатеринбург ул. Орджоникидзе д. 56, офис № 105
+							</div>
+							<div class="plash-tel">8 (34374) 5 32 02</div>
+							<div class="plash-text">Вы можете позвонить в любой из наших офисов, написать нам письмо или задать вопрос заказать звонок специалиста в удобное время</div>
+							<div class="plash-button">
+								<a href="#form-popup">Связаться с нами</a>
+							</div>
+						</div>
+
+						<a href="#" class="plash-mobile-link mobile-link-1">Посмотреть на карте</a>
+						<div id="map4" class="ymap-mobile ymap-mobile-1"></div>
+
+						<div class="plash-content-holder plash-2">
+							<div class="plash-city">Сысертский филиал</div>
+							<div class="plash-adr">620014 г. Сысерть ул. Орджоникидзе д. 56, офис № 105
+							</div>
+							<div class="plash-tel">8 (34374) 5 32 02</div>
+							<div class="plash-text">Вы можете позвонить в любой из наших офисов, написать нам письмо или задать вопрос заказать звонок специалиста в удобное время</div>
+							<div class="plash-button">
+								<a href="#form-popup">Связаться с нами</a>
+							</div>
+						</div>
+
+						<a href="#" class="plash-mobile-link mobile-link-2">Посмотреть на карте</a>
+						<div id="map5" class="ymap-mobile ymap-mobile-2"></div>
+
+						<div class="plash-content-holder plash-3">
+							<div class="plash-city">Первоуральский филиал</div>
+							<div class="plash-adr">620014 г. Первоуральск ул. Орджоникидзе д. 56, офис № 105
+							</div>
+							<div class="plash-tel">8 (34374) 5 32 02</div>
+							<div class="plash-text">Вы можете позвонить в любой из наших офисов, написать нам письмо или задать вопрос заказать звонок специалиста в удобное время</div>
+							<div class="plash-button">
+								<a href="#form-popup">Связаться с нами</a>
+							</div>
+						</div>
+
+						<a href="#" class="plash-mobile-link mobile-link-3">Посмотреть на карте</a>
+						<div id="map6" class="ymap-mobile ymap-mobile-3"></div>
+
+					</div>
+					<div>
+						<div id="map" class="ymap ymap1 show"></div>
+					</div>
+					<div>
+						<div id="map2" class="ymap ymap2"></div>
+					</div>
+					<div>
+						<div id="map3" class="ymap ymap3"></div>
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="footer-holder">
+					<div class="footer-copy">
+						<div class="year">2017 bti</div>
+						<div class="tel">Тел: +7 (343) 287 85 85</div>
+					</div>
+					<div class="footer-soth">
+						<a href="#" class="vk"></a>
+						<a href="#" class="fb"></a>
+						<div class="tel-mob">Тел: +7 (343) 287 85 85</div>
+						<div class="text">Разработано АПС концепт</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- jQuery IF NEEDED-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+				<!--[if IE 8]>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<![endif]-->
+			<!-- All libs scripts -->
+			<script src="js/libs.min.js"></script>
+			<!-- Main file with scripts -->
+			<script src="js/main.min.js"></script>
+		</body>
+		</html>
