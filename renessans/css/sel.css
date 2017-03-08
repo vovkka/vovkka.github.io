@@ -1,0 +1,126 @@
+
+<!--
+////////////////////////////////////////
+////           Демо #2              ////
+////////////////////////////////////////
+-->	
+
+
+.dropcontainer_demo2 {
+	position:relative;
+	margin-top: 12px;
+	} 
+
+.dropcontainer_demo2 {
+	margin-top: 12px;
+}
+
+.trigger_demo2 {
+	color: #fff;
+    text-decoration: none;
+    padding: 0;
+	width: 100%;
+	background: url(../img/bg_link_ug_white.png) 98% center no-repeat;
+	display: block;
+	font-size: 20px;
+    font-family: 'CintaLight';
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	}
+
+.trigger_demo2:hover {
+	font-size: 20px;
+    font-family: 'CintaLight';
+    color: #fff;
+	background: url(../img/bg_link_ug_white.png) 98% center no-repeat;
+	}
+
+.activetrigger_demo2 {
+	padding: 0px;
+	color: #fff;
+	font-size: 20px;
+    font-family: 'CintaLight';
+	text-decoration: none;
+	width: 100%;
+	background: url(../img/bg_link_ug_white_rotate.png) 98% center no-repeat;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+.activetrigger_demo2:hover {
+	background: url(../img/bg_link_ug_white_rotate.png) 98% center no-repeat;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+    font-family: 'CintaLight';
+	}
+
+.activetrigger_demo2:active {
+	background: url(../img/bg_link_ug_white_rotate.png) 98% center no-repeat;
+	text-decoration: none;
+	}
+
+.dropcontainer_demo2 ul {
+	font-size: 16px;
+	border-top: none;
+	list-style-type: none;
+	padding: 10px;
+	padding-left: 0px;
+	margin: 0;
+	width: 30%;
+	z-index: 100;
+    background: #fff;
+    border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+.dropcontainer_demo2 ul li {
+	padding: 5px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+	transition: all 0.5s ease;
+	}
+
+.dropcontainer_demo2 ul li:hover {
+	background: 
+	outline: none;
+	}
+
+.dropcontainer_demo2 ul li:first-child {
+	display: none;
+	}
+
+.dropcontainer_demo2 ul li:last-child {
+	border-bottom: none;
+	}
+
+.dropcontainer_demo2 ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+    font-family: 'CintaLight';
+}
+
+.dropdownhidden_demo2 {
+	display: none;
+	}
+
+.dropdownvisible_demo2 {
+	height: auto;
+	}
+
+.dropdownvisible_demo2 {
+	height: 150px;
+	overflow-y: scroll;
+	position: absolute;
+	}

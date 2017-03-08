@@ -1,0 +1,250 @@
+﻿
+#verticalTab {
+    clear: both;
+}
+
+ul.resp-tabs-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+    display: inline-block;
+    padding: 13px 0;
+    padding-bottom: 5px;
+    margin: 0 15px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Miniature';
+    text-transform: uppercase;
+    background: url('../img/bg_link_tab_no_active.png') repeat-x center bottom;
+}
+
+li.resp-tab-active {
+    background: #f3f0f6;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+
+.resp-tab-active {
+    border-bottom: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #f3f0f6;
+    color: #d0b638;
+    font-size: 40px !important;
+    font-family: 'Miniature';
+    padding: 12px 30px 12px 30px !important;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+
+h2.resp-accordion {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 15px;
+    font-weight: normal;
+}
+
+
+h2.resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    border-radius: 0!important;
+    font-weight: normal;
+}
+
+h2.resp-tab-active:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    background: url('../img/area_yellow.png') no-repeat;
+     -webkit-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    width: 72px;
+    height: 18px;
+    margin-left: -35px;
+}
+
+
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 39%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    max-width: 375px;
+    padding: 30px 0px 30px 8% !important;
+    margin: 0;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    /*border: 1px solid #c1c1c1;*/
+    float: right;
+    width: 60%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+}
+
+.resp-vtabs li.resp-tab-active {
+    background:  url('../img/address_tab_1.png') no-repeat right top;
+    background-size: cover;
+    /*min-height: 174px;*/
+    border-right: none;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    max-width: 375px;
+    padding: 30px 0px 30px 8% !important;
+}
+
+/*уголки*/
+
+/*.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}*/
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #efecec !important;
+}
+.resp-easy-accordion  h2.resp-accordion {
+        display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+    /*border: 1px solid #c1c1c1;*/
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    /*border-bottom: 1px solid #c1c1c1 !important;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    /*border-top: 1px solid #c1c1c1 !important;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+        font-size: 20px!important;
+    }
+
+    h2.resp-tab-active {
+        font-size: 20px!important;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        /*border: 1px solid #C1C1C1;*/
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display:none !important;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        /*border-bottom: 1px solid #c1c1c1 !important;*/
+    }
+}
+
+.tabs-list-li-street,.tabs-list-li-title,.tabs-list-li-tel,.tabs-list-li-group {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.resp-vtabs li.resp-tab-item .tabs-list-li-street
+{
+    font-weight: bold;
+    font-family: 'FuturisC-Bold';
+}
+
+.tabs-list-li-title,.tabs-list-li-tel,.tabs-list-li-group {
+    font-family: 'FuturisC';
+}
+
+.resp-vtabs li.resp-tab-item .tabs-list-li-street {
+    color: #009cff;
+}
+
+.resp-vtabs li.resp-tab-item.resp-tab-active .tabs-list-li-street {
+    color: #000;
+}
+
